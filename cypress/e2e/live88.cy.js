@@ -22,6 +22,7 @@ describe('Live88 check visible open mini games', () => {
     cy.wait(4000);// ждём загрузку
     cy.get('button[data-test-id="button-click-open-mini-games-modal"]').click() // клик по кнопке
     cy.get('iframe').should('be.visible'); // проверка на видимость iframe
+
   });
 });
     // Test #3
