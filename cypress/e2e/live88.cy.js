@@ -8,7 +8,6 @@ describe('Live88 check visible loot boxes open up', () => {
     cy.wait(3000);// ждём загрузку
     cy.get('[data-test-id="button-click-open-lootboxes"]').click() // клик по кнопке
     cy.get('[data-test-id="generic_scrollable_container"]').should('be.visible'); // проверка на видимость контейнера
-    
   });
 });
 
